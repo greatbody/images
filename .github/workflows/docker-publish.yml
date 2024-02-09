@@ -18,7 +18,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: docker-google
+  IMAGE_NAME: greatbody/docker-google
 
 jobs:
   build:
