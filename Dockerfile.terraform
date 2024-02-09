@@ -1,0 +1,7 @@
+FROM --platform=linux/amd64 docker:25.0.0-git
+
+RUN apk --no-cache add curl python3 \
+    && curl -o terraform_1.7.3_linux_amd64.zip https://releases.hashicorp.com/terraform/1.7.3/terraform_1.7.3_linux_amd64.zip \
+    && unzip terraform_1.7.3_linux_amd64.zip \
+    && chmod +x terraform \
+    && mv ./terraform /usr/bin/
